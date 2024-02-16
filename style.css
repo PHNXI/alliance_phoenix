@@ -31,10 +31,10 @@ body{
     align-content: center;
 }
 .wrapper{
-    width: 980px;
+    max-width: 980px;
     background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
     background-position: center;
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: 3px 3px 3px #000;
     border-radius: 10%;
 }
@@ -63,7 +63,7 @@ body{
     background-color: rgb(116, 40, 40);
 }
 .main{
-    margin: 200px 0;
+    margin: 100px 0;
 }
 .main p{
     font-size: 2rem;
@@ -90,4 +90,32 @@ body{
 }
 .main_external img{
     width: 980px;
+}
+
+
+
+
+
+
+@media(max-width: 880px){
+    .header{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar a{
+        padding: auto 0;
+    }
+    .central{
+        flex-direction: column;
+    }
+    .wrapper{
+        margin: 0;
+        padding: 0;
+        background-attachment: fixed;
+    }
+    .footer p{
+        margin: 0;
+    }
 }
