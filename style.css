@@ -36,7 +36,9 @@ body{
     background-position: center;
     font-weight: 600;
     text-shadow: 3px 3px 3px #000;
-    border-radius: 10%;
+    margin: 0 0 100px 0;
+    border: 1px solid #fff;
+    border-radius: 8px;
 }
 .header{
     color: #fff;
@@ -51,6 +53,7 @@ body{
     align-items: center;
     width: 100%;
     background-color: rgb(119, 10, 10);
+    border-radius: 8px;
 }
 .navbar a{
     text-align: center;
@@ -60,7 +63,9 @@ body{
     width: 100%;
 }
 .navbar a:hover{
-    background-color: rgb(116, 40, 40);
+    background-color: rgb(179, 23, 23);
+    text-decoration: underline;
+    border-radius: 8px;
 }
 .main{
     margin: 100px 0;
@@ -88,8 +93,72 @@ body{
     text-align: center;
     margin: 70px 0;
 }
+/*external page*/
+.log_in{
+    background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 980px;
+    margin:0 0 100px 0;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    text-shadow: 3px 3px 3px #000;
+}
 .main_external img{
     width: 980px;
+}
+/*log_in*/
+.log_in_header h1{
+    margin: 50px 150px ;
+    color: #fff;
+    text-align: center;
+
+}
+.login-container {
+    color: #fff;
+    max-width: 320px;
+    margin: 70px auto ;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(65, 65, 65);
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+button {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+.error-msg {
+color: red;
+font-weight: bold;
 }
 
 
@@ -97,7 +166,11 @@ body{
 
 
 
+
 @media(max-width: 880px){
+    .backgraund{
+        background-image: none;
+    }
     .header{
         display: none;
     }
@@ -105,17 +178,30 @@ body{
         flex-direction: column;
     }
     .navbar a{
-        padding: auto 0;
+        padding: 1rem 0;
     }
     .central{
         flex-direction: column;
+        text-align: center;
     }
     .wrapper{
         margin: 0;
         padding: 0;
         background-attachment: fixed;
+        border-radius: 0;
     }
     .footer p{
         margin: 0;
+    }
+    .main_external img{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .log_in_header h1{
+        margin:100px 20px;
+    }
+    .login-container{
+        margin: 100px auto;
     }
 }
