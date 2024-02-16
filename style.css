@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.thumbnail { 
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index:999; 
+    cursor: pointer; 
+    -webkit-transition-property: all; 
+    transition-property: all;
+    -webkit-transition-duration: 0.3s; 
+    transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+    transition-timing-function: ease; 
+} 
+    
+/*change the number below to scale to the appropriate size*/ 
+.thumbnail:hover {   
+    transform: scale(1.1); 
+    
+}
+.backgraund{
+    background-image: url(img/Sky-Stars-Pattern.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.wrapper{
+    width: 980px;
+    background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
+    background-position: center;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px #000;
+    border-radius: 10%;
+}
+.header{
+    color: #fff;
+    font-size: 2rem;
+}
+.header h1 strong em{
+    text-shadow: 4px 4px 4px grey;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(119, 10, 10);
+}
+.navbar a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+}
+.navbar a:hover{
+    background-color: rgb(116, 40, 40);
+}
+.main{
+    margin: 200px 0;
+}
+.main p{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.central{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    margin: 100px;
+}
+.central h2{
+    text-decoration: underline;
+}
+.central p{
+    text-align: center;
+}
+.footer{
+    color: #fff;
+    text-align: center;
+    margin: 70px 0;
+}
+.main_external img{
+    width: 980px;
+}
