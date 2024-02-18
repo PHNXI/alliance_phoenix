@@ -31,18 +31,32 @@ body{
     align-content: center;
 }
 .wrapper{
+    position: relative;
     max-width: 980px;
-    background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
-    background-position: center;
-    background-size: cover;
-    font-weight: 600;
-    text-shadow: 3px 3px 3px #000;
     margin: 0 0 100px 0;
     padding: 20px;
+    font-weight: 600;
+    text-shadow: 3px 3px 3px #000;
     border: 1px solid #fff;
     border-radius: 8px;
+    &::before{
+        content: '';
+        background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
+    }
+}
+.wrapper p, .wrapper h2{
+    position: relative;
 }
 .header{
+    position: relative;
     color: #fff;
     font-size: 2rem;
 }
@@ -50,6 +64,7 @@ body{
     text-shadow: 4px 4px 4px grey;
 }
 .navbar{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -98,11 +113,12 @@ body{
 /*external page*/
 .main_external{
     background-color: #ccc;
+    text-align: center;
 }
 .main_external img{
-    width: 979px;
+    width: 980px;
+    padding: 15px;
     border-radius: 8px;
-    padding: 20px;
 }
 .wrapper_I{
     border: 1px solid #fff;
@@ -110,22 +126,36 @@ body{
 }
 /*log_in*/
 .log_in{
-    background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
-    background-size: cover;
-    background-position: center;
-    padding:0 0 100px 0;
-    margin-bottom: 40px;
-    border-radius: 8px;
-    border: 1px solid #fff;
+    position: relative;
+    max-width: 980px;
+    padding:48px 48px 100px 48px;
+    margin-bottom: 80px;
+    font-weight: 600;
     text-shadow: 3px 3px 3px #000;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    &::before{
+        content: '';
+        background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.6;
+    }
 }
 .log_in_header h1{
+    position: relative;
     margin: 50px 150px ;
     color: #fff;
     text-align: center;
 
 }
 .login-container {
+    position: relative;
     color: #fff;
     max-width: 320px;
     margin: 70px auto ;
@@ -178,10 +208,7 @@ font-weight: bold;
 
 
 
-@media(max-width: 880px){
-    .backgraund{
-        background-image: none;
-    }
+@media(max-width: 1000px){
     .header{
         display: none;
     }
@@ -206,7 +233,7 @@ font-weight: bold;
         margin: 0;
     }
     .main_external img{
-        width: 100%;
+        width: 90%;
         background-size: cover;
         background-repeat: no-repeat;
     }
