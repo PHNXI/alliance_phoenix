@@ -34,9 +34,11 @@ body{
     max-width: 980px;
     background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
     background-position: center;
+    background-size: cover;
     font-weight: 600;
     text-shadow: 3px 3px 3px #000;
     margin: 0 0 100px 0;
+    padding: 20px;
     border: 1px solid #fff;
     border-radius: 8px;
 }
@@ -52,8 +54,8 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    max-width: 1020px;
     background-color: rgb(119, 10, 10);
-    border-radius: 8px;
 }
 .navbar a{
     text-align: center;
@@ -94,20 +96,29 @@ body{
     margin: 70px 0;
 }
 /*external page*/
+.main_external{
+    background-color: #ccc;
+}
+.main_external img{
+    width: 979px;
+    border-radius: 8px;
+    padding: 20px;
+}
+.wrapper_I{
+    border: 1px solid #fff;
+    margin:0 0 100px 0;
+}
+/*log_in*/
 .log_in{
     background-image: url(img/phoenix-bird-with-outstretched-wings.jpg);
     background-size: cover;
     background-position: center;
-    max-width: 980px;
-    margin:0 0 100px 0;
+    padding:0 0 100px 0;
+    margin-bottom: 40px;
     border-radius: 8px;
     border: 1px solid #fff;
     text-shadow: 3px 3px 3px #000;
 }
-.main_external img{
-    width: 980px;
-}
-/*log_in*/
 .log_in_header h1{
     margin: 50px 150px ;
     color: #fff;
@@ -186,9 +197,10 @@ font-weight: bold;
     }
     .wrapper{
         margin: 0;
-        padding: 0;
+        padding: 20px;
         background-attachment: fixed;
         border-radius: 0;
+        font-size: small;
     }
     .footer p{
         margin: 0;
